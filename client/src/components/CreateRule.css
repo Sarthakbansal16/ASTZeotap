@@ -1,0 +1,26 @@
+/* src/components/CreateRule.css */
+.create-rule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.create-rule input,
+.create-rule textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.create-rule button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.create-rule button:hover {
+    background-color: #45a049;
+}

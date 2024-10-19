@@ -1,7 +1,7 @@
-require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
-const ruleRoutes = require('./routes/ruleRoutes.js');
+const ruleRoutes = require('./routes/ruleRoutes');
+require('dotenv').config();
 const bodyParser = require('body-parser');
 const cors=require('cors')
 const app = express();
@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGODB_URI, {
   });
 
 
-app.use('/api/rules', ruleRoutes);
+  app.use('/api/rules', ruleRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

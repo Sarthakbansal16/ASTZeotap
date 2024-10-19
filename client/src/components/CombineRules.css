@@ -1,0 +1,25 @@
+/* src/components/CombineRules.css */
+.combine-rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.combine-rules input {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.combine-rules button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.combine-rules button:hover {
+    background-color: #d32f2f;
+}
