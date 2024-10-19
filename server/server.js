@@ -3,9 +3,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const ruleRoutes = require('./routes/ruleRoutes.js');
 const bodyParser = require('body-parser');
-
+const cors=require('cors')
 const app = express();
 app.use(bodyParser.json());
+
+app.use(cors({ origin: 'http://localhost:3000' }));
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
